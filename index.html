@@ -1,0 +1,250 @@
+<!Doctype html>
+<html lang ="ru">
+    <head>
+         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Rout</title>
+        <style type="text/css">
+
+.tablica {
+  display: table; 
+  width: 100%; 
+  border-spacing: 10px 10px; 
+} 
+ .product-img:hover {transform: scale(1.1);}
+
+.yacheika {
+  display: table-cell; 
+  padding: 10px; 
+}
+</style>
+        <style>
+
+            @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Londrina+Outline|Londrina+Sketch|Miltonian');
+            .text {
+    color: white;
+    top:20px;
+    font-family: 'Londrina Sketch', cursive;
+    font-size:150px;
+	margin: 0px 3px 3px 0px;
+	padding: 0px 0px 0px 0px;
+	float: left;
+	height: 200px;
+	width: 150px;
+   }
+            }
+            
+            .photo {
+    background: #d9dabb; /* Цвет фона */
+    width: 150px; /* Ширина */
+    margin: 0 10px 10px 0; /* Отступы */
+    padding: 10px 0; /* Поля сверху и снизу */
+    text-align: center; /* Выравнивание по центру */
+    display: inline-block; /* Строчно-блочный элемент */
+   }
+   .photo img {
+    border: 2px solid #8b8e4b; /* Параметры рамки */
+   }
+   .photo p {
+    margin: 0; /* Отступы */
+   }
+        
+ #mainmenu {
+position: relative;
+ vertical-align: top;
+height: 40px;
+margin: 30px 0;
+padding: 0;
+float: left;
+width: 100%;
+z-index: 10
+}
+ 
+#mainmenu ul {
+clear: left;
+position: relative;
+right: 50%;
+height: 40px;
+float: right;
+text-align: center;
+font: 20px Arial, Helvetica, sans-serif;
+list-style: none;
+padding: 0;
+margin: 0
+}
+
+
+#mainmenu > ul > li {
+position: relative;
+left: 50%;
+float: left;
+height: 40px;
+padding: 0;
+margin: 0
+}
+#mainmenu > ul > li > a {
+border-left: 1px solid #666;
+display: block;
+color: #fff;
+text-decoration: none;
+padding: 0 20px;
+line-height: 40px;
+}
+#mainmenu > ul > li:first-child > a {
+border: none;
+}
+#mainmenu > ul > li:hover > a, #mainmenu > ul > li.hover > a, #mainmenu > ul > li.active > a {
+color: #fff
+}
+#mainmenu > ul > li:hover, #mainmenu > ul > li.hover, #mainmenu > ul > li.active {
+background:#FF1493
+}
+
+/* Выпадающие подпункты */
+
+#mainmenu ul li ul {
+position: absolute;
+left: 0;
+top: 40px;
+display: none;
+list-style: none;
+visibility: hidden;
+padding: 0;
+margin: 0;
+width: 200px
+}
+#mainmenu > ul > li ul li {
+background-color: #FFB6C1;
+position: relative;
+left: 0;
+display: list-item;
+float: none;
+height: auto;
+margin: 0;
+text-align: left;
+}
+#mainmenu ul li ul li a {
+border-bottom: 1px solid #4B0082;
+display: block;
+color: #fff;
+padding: 10px 15px;
+text-decoration: none;
+}
+#mainmenu ul li ul li.parent a {
+position: relative;
+}
+#mainmenu ul li ul > li.parent > a::before {
+border-top: 1px dashed #fff;
+border-right: 1px solid #fff;
+content: "";
+display: block;
+position: absolute;
+right: 15px;
+top: 50%;
+transform: translateY(-50%) rotate(45deg);
+height: 6px;
+width: 6px;
+}
+#mainmenu ul li ul li:hover, #mainmenu ul li ul li.hover {
+background-color: #FFC0CB;
+}
+#mainmenu ul li:hover ul, #mainmenu ul li.hover ul {
+display: block
+}
+            
+            
+
+#mainmenu ul li:hover > ul {
+opacity: 1;
+visibility: visible;
+margin: 0;
+}
+#mainmenu ul li ul li ul {
+top: 0;
+left: 200px;
+margin: 0 0 0 20px;
+width: 180px
+}
+        @keyframes cimg{
+                0%{
+                    background-image:url("http://yamoscow.ru/wp-content/uploads/2016/01/%D0%9F%D1%83%D1%88%D0%BA%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9-%D0%BC%D0%BE%D1%81%D1%82.jpg");
+                }
+               
+                25%{
+                    background-image: url:("https://cs8.pikabu.ru/post_img/big/2016/10/30/11/1477856869121620846.jpg");
+                }
+            
+                50%{
+                    background-image:url("http://icdn.lenta.ru/images/2014/05/16/15/20140516154254316/realty_detail_86ed873075fbdf9b9371462cf596dd07.jpg");
+                }
+                75%{
+                    background-image:url("http://www.kamensky.ru/im/2013/02/17_night_moscow/114.jpg");
+                }
+                100%{
+                    background-image: url("http://oboibox.ru/orig/vechernie-ulicy-Moskvy(oboibox.ru).jpg");
+                }
+            }
+            body, html{margin: 0;}
+                .wallpaper {
+                    margin:0;
+                    vertical-align: top;
+                    height:80vh;
+                    background:black 50%/cover no-repeat;
+                    animation: cimg 17s infinite;
+            }
+        </style>
+
+    </head>
+    <body>
+         <header class="wallpaper">
+             <div class="text">
+     <p>ROUT</p>
+  </div>
+             <div id="mainmenu">
+             <ul>
+                   <li><a href="#">Знаки</a>
+                 <ul> 
+                    <li class="parent"><a href="#"></a>Предупреждающие</li>
+                    <li><a href="#"></a>Приоритета дорожного движения</li>
+                    <li><a href="#"></a>Запрещающие </li>
+                    <li><a href="#"></a>Знаки сервиса</li>
+                </ul>
+                </li>
+                   <li><a href="menu__href">Карта</a></li>
+                   <li><a href="menu__href">Правила</a></li>
+             </ul>
+             </div>
+        </header>
+<div class="konteiner">
+  <div class="yacheika" ><img src="D:\веб программирование\проект/линии.gif"/><br>Примыкание второстепенной дороги></div>
+  <div class="yacheika" ><img src="D:\веб программирование\проект/движение.gif"/><br>Движение без остановки запрещено</div>
+  <div class="yacheika" ><img src="D:\веб программирование\проект/дети.gif"/><br>Участок дороги вблизи детского учреждения (школы, оздоровительного лагеря и тому подобного), на проезжей части которой возможно появление детей.</div>
+  <div class="yacheika" ><img src="D:\веб программирование\проект/стоп.gif"/><br>Запрещается движение без остановки перед стоп-линией, а если ее нет — перед краем пересекаемой проезжей части.</div>
+</div>
+    
+        
+        <script src="https://panoramas.api-maps.yandex.ru/embed/1.x/?lang=ru&ll=37.65267706%2C55.85517494&ost=dir%3A255.11825914695797%2C7.154158602930205~span%3A119.99999999999999%2C56.4899517318354&size=690%2C495&l=stv"></script>
+        <main>
+        <input type="button" name="button" value="Определить" onclick="color">
+            
+        </main>
+        <script>
+         function color{
+            
+        var img = document.getElementById("photo"); //кладете в переменную img вашу фотографию
+var canvas = document.createElement("canvas"); //создаете новый элемент canvas
+//назначаете канвасу такие же размера как и фотографии
+canvas.style.width = img.width;
+canvas.style.height = img.height;
+
+canvas.getContext("2d").drawImage(img, 0, 0); //рисуете вашу фотографию на канвасе
+
+var p = canvas.getContext('2d').getImageData(x, y, 1, 1).data; //получаете с канваса цвет пикселя в позиции x, y как массив [R, G, B] (допустим вы получили белый [255, 255, 255]);
+             var kot ="Главная дорога";
+
+var hex = "#" + ("000000" + rgbToHex(p[0], p[1], p[2])).slice(-6); //функцией rgbToHex конвертируете полученный массив в привычный 16-ричный формат, получится #FFF   
+          
+        </script>
+        <footer> Jane Karpeeva 2017</footer>
+    </body>
+</html>
